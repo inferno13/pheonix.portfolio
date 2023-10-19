@@ -1,0 +1,24 @@
+.tickets{
+    width: 80%;
+    margin: auto;
+}
+.tickets .card-support{
+    padding: var(--va-card-padding);
+}
+.tickets .card-support h3{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+.tickets .card-support h3 i{
+    margin-right: .5em;
+}
+
+.tickets .inner-table{
+    overflow-x: scroll !important;
+}
+.tickets .inner-table table{
+    min-width: 800px;
+}

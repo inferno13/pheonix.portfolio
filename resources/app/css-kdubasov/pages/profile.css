@@ -1,0 +1,121 @@
+.profile{
+    width: 80%;
+    margin: 0 auto 2em;
+}
+
+/*top title with i*/
+.profile .title-redact{
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 1.25em 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+    border-bottom: 1px solid var(--gray-op-20);
+}
+.profile .title-redact i{
+    margin-right: .5em;
+}
+
+/*form-block*/
+.profile .form-block{
+    padding: .75em 0 1.5em;
+    display: flex;
+    align-content: flex-start;
+}
+.profile .form-block .text-form{
+    width: calc(40% - 30px);
+    margin-right: 30px;
+    font-size: 15px;
+    opacity: .75;
+}
+.profile .form-block .inputs-form{
+    width: calc(60%);
+    max-width: 550px;
+}
+
+/*input-group with input and label*/
+.profile .input-group label{
+    font-size: 15px;
+    margin-bottom: .35em;
+}
+.profile .input-group label b{
+    color: var(--bs-purple);
+}
+
+.profile .telegram{
+    display: flex;
+}
+.profile .telegram button{
+    margin-left: .5em;
+}
+.profile .telegram .va-button__content{
+    background: var(--bs-purple) !important;
+    color: white;
+    border-radius: inherit;
+}
+.profile .telegram .va-input-wrapper__field{
+    border: 1px solid var(--gray-op-20) !important;
+    padding: .5em !important;
+}
+.profile .telegram .va-input-wrapper__field i{
+    color: var(--bs-purple);
+}
+
+/*Реферальная программа*/
+.profile .form-block .text-inner{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.profile .form-block .text-inner:last-child{
+    margin-bottom: 0;
+}
+.profile .form-block .text-inner .title-inner{
+    margin: 0 0 .25em 0;
+}
+
+/*bottom submit button*/
+.submit-container{
+    width: 100%;
+    padding: 2em 0 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*upload file*/
+.va-file-upload{
+    background: none !important;
+    margin: 0 !important;
+}
+.va-file-upload .va-button{
+    margin-bottom: .25em;
+}
+.va-file-upload .va-button:before{
+    background: var(--bs-purple);
+}
+.va-file-upload__field{
+    flex-direction: column-reverse !important;
+}
+
+/*media*/
+@media screen and (max-width: 1200px){
+    .profile{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 660px){
+    .profile .form-block{
+        flex-wrap: wrap;
+    }
+    .profile .form-block .text-form,
+    .profile .form-block .inputs-form{
+        width: 100%;
+        max-width: 100%;
+    }
+    .profile .form-block .text-form{
+        margin-top: -1em;
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,100 @@
+/*input-group with input and label*/
+.input-group{
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.input-group label{
+    font-size: 15px;
+    margin-bottom: .15em;
+}
+.input-group label b{
+    color: var(--bs-purple);
+}
+.input-group input{
+    width: 100%;
+    background: none;
+    padding: .6em;
+    border: 1px solid var(--gray-op-40) !important;
+    border-radius: var(--def-radius);
+    transition: .25s;
+}
+.input-group input:disabled{
+    background: var(--gray-op-20);
+    cursor: no-drop;
+}
+.input-group input:hover,
+.input-group input:focus{
+    border: 1px solid var(--gray-op-40);
+    box-shadow: var(--va-card-box-shadow, var(--va-block-box-shadow));
+}
+.input-group input:disabled:hover{
+    border: 1px solid var(--gray-op-40);
+    box-shadow: none;
+}
+.va-input-wrapper__field:after,
+.va-input-wrapper__field{
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+.va-input-wrapper__field{
+    border-top: 1px solid var(--gray-op-40) !important;;
+}
+
+
+/*select*/
+.input-group .va-select{
+    border: none;
+    background: none !important;
+}
+.input-group .va-select .va-input-wrapper{
+    border: 1px solid var(--gray-op-40);
+    border-radius: var(--def-radius);
+    transition: .25s;
+}
+.input-group .va-select .va-input-wrapper__text{
+    padding-left: .5em !important;
+}
+.input-group .va-input-wrapper i{
+    color: #6f42c1 !important;
+}
+.input-group .va-select  .va-input-wrapper__field,
+.input-group .va-select  .va-input-wrapper__field:after{
+    border: none;
+    border-top: 0 !important;
+    background: none;
+}
+
+
+/*clipboard-input-group*/
+.clipboard-input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clipboard-input-group .va-input-wrapper__field:after{
+    background: rgba(0, 0, 0, 0.1);
+}
+.clipboard-input-group .va-input-wrapper__field{
+    transition: .25s;
+    cursor: copy;
+}
+.clipboard-input-group input{
+    font-weight: 600;
+    color: #6f42c1;
+    text-align: center;
+    padding: 1em;
+}
+.clipboard-input-group .input-group{
+    margin-bottom: .65em;
+}
+.clipboard-input-group p{
+    margin-top: 0;
+    cursor: pointer;
+    transition: .25s;
+}
+.clipboard-input-group p:hover{
+    color: var(--bs-purple);
+}

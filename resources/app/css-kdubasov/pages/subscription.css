@@ -1,0 +1,116 @@
+.subscription{
+    width: 75%;
+    margin: 0 auto 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+}
+
+/*cards-container*/
+.subscription .cards-container,
+.faq-container{
+    width: calc(50% - 3em);
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription .card-subsc{
+    padding: var(--va-card-padding);
+    height: auto !important;
+}
+.subscription .card-subsc h3{
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: .75em;
+}
+
+/*card*/
+.card-subsc{
+    width: 100% !important;
+    margin: 1.5em 0;
+    padding: var(--va-card-padding);
+    position: relative;
+}
+.card-subsc:first-child{
+    margin-top: 0;
+}
+
+.card-subsc h3.block{
+    position: absolute;
+    background: var(--bs-purple);
+    padding: .25em 1em;
+    color: #FFF;
+    font-size: 1.25em;
+    border-radius: 5px;
+    left: -10px;
+    top: 10px;
+}
+.card-subsc .content{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-subsc .content .inner h3{
+    font-weight: 600;
+    margin: 0;
+}
+.card-subsc .content .inner div{
+    opacity: .75;
+}
+
+/*кнопка*/
+.card-subsc .content .va-button:before,
+.card-subsc .content .va-button{
+    background: var(--bs-purple-op-25) !important;
+    color: var(--bs-purple) !important;
+    border-radius: 20px !important;
+}
+.card-subsc .content .va-button:before{
+    background: none !important;
+}
+.card-subsc .content .va-button__content{
+    border-radius: inherit !important;
+    background: none !important;
+}
+.card-subsc .content .va-button i{
+    margin-right: .25em;
+}
+
+
+/*media*/
+@media screen and (max-width: 1200px){
+    .subscription{
+        width: 95%;
+        margin: 0 auto 4em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start !important;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1100px){
+    .subscription .cards-container,
+    .faq-container{
+        width: 100%;
+    }
+    .subscription .cards-container{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .card-subsc h3.block{
+        left: -5px;
+    }
+}
+@media screen and (max-width: 400px){
+    .card-subsc .content{
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-subsc .content .inner{
+        margin-bottom: 1em;
+    }
+}

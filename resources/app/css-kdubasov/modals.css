@@ -1,0 +1,10 @@
+.va-modal__container{
+    width: 40% !important;
+    max-width: 600px !important;
+    min-width: 300px !important;
+}
+.va-modal__title{
+    font-weight: 600;
+    font-size: 1.25em;
+    color: var(--dark) !important;
+}

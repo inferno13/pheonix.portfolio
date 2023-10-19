@@ -1,0 +1,31 @@
+
+/*bottom submit button*/
+.light-purple-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em 2em;
+    background: var(--light-purple);
+    border: none;
+    border-radius: var(--def-radius);
+    color: #8a7ea9;
+    font-weight: 600;
+    transition: .25s;
+    cursor: pointer;
+}
+.light-purple-button i{
+    margin-right: .5em;
+}
+.light-purple-button:hover{
+    padding: .5em 3em;
+}
+
+/*purple button*/
+.light-purple-button.dark{
+    background: var(--bs-purple);
+    color: white;
+}
+.light-purple-button.dark:hover{
+    background: var(--light-purple);
+    padding: .5em 2em;
+}

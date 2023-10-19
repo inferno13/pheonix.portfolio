@@ -1,0 +1,76 @@
+.tickets-admin{
+    width: 90%;
+    margin: 2em auto;
+}
+.bg-nt.tc-ad{
+    padding: 1.75em 5%;
+}
+
+
+.tickets-admin h3{
+    font-size: 1.25em;
+    font-weight: 300;
+    margin: 1.5em 0 1.5em;
+}
+.tickets-admin h3:first-child{
+    margin-top: .5em;
+}
+/*blocks container*/
+.tickets-admin .blocks-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ticket-container .va-card__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tickets-admin .blocks-container h4.title,
+.TicketBlock__date{
+    background: var(--gray-op-10);
+    padding: 1em var(--va-card-padding);
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1;
+}
+.TicketBlock__date{
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: .85em;
+}
+.tickets-admin .blocks-container .TicketBlock__description,
+.TicketBlock__user{
+    opacity: .75;
+    padding: 1em var(--va-card-padding);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.TicketBlock__user{
+    border-bottom: 0;
+}
+
+/*block*/
+.ticket-container{
+    width: calc(25% - .75em);
+    margin: 0 0 1em 0;
+}
+
+
+/*media*/
+@media screen and (max-width: 1200px){
+    .ticket-container{
+        width: calc(33% - .75em);
+        margin: 0 0 1em 0;
+    }
+}
+@media screen and (max-width: 950px){
+    .ticket-container{
+        width: calc(50% - .5em);
+        margin: 0 0 .75em 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .ticket-container{
+        width: 100%;
+    }
+}

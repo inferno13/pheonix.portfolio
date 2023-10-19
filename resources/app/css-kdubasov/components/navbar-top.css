@@ -1,0 +1,211 @@
+.navbar-top{
+    color: var(--bs-white) !important;
+    background: var(--bs-purple) !important;
+}
+
+/*main content*/
+.navbar-top .va-navbar__content{
+    align-items: center;
+}
+
+/*left*/
+.navbar-top .va-navbar__left{
+    display: flex;
+    align-items: center;
+}
+
+/*logo*/
+.navbar-top .logo-nav{
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: -5px;
+}
+
+/*show menu button*/
+.navbar-top .show-menu{
+    height: 35px;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: var(--def-radius);
+    cursor: pointer;
+    transition: .25s;
+    border: none;
+}
+.navbar-top .show-menu:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+.navbar-top .fa-bars{
+    color: white !important;
+}
+
+/*right block*/
+.navbar-top .va-navbar__right{
+    display: flex;
+    align-content: center;
+}
+
+.navbar-top .invite-but,
+.navbar-top .balance,
+.navbar-top .notification,
+.navbar-top .user{
+    position: relative;
+    height: 35px;
+    display: flex;
+    align-items: center;
+
+    margin-right: .5em;
+    padding: 5px 10px;
+    border-radius: var(--def-radius);
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    cursor: pointer;
+}
+.navbar-top .navbar-top svg path{
+    width: 20px !important;
+}
+
+/*actions*/
+.navbar-top .app-navbar-actions__item{
+    margin: 0;
+}
+
+    /*user span*/
+.navbar-top .user i.fa-user{
+    margin-right: .35em;
+}
+.navbar-top .user .fa-angle-down,
+.navbar-top .user .fa-angle-up{
+    font-size: 12px !important;
+}
+.navbar-top .profile-dropdown-wrapper .va-dropdown__content{
+    position: absolute !important;
+    width: inherit !important;
+    right: auto;
+    left: -86px;
+}
+
+/*dropdowns*/
+/*notification-dropdown*/
+.navbar-top .notification-dropdown__content .buttons-container{
+    padding-top: .5em;
+}
+.navbar-top .notification-dropdown .va-dropdown__content{
+    position: absolute !important;
+    width: inherit !important;
+    right: auto;
+    left: -126px;
+}
+    /*item*/
+.navbar-top .notification-dropdown__item{
+    padding: .25em 0 !important;
+}
+.navbar-top .notification-dropdown__item:hover{
+    color: inherit;
+    cursor: default;
+}
+/*button*/
+.navbar-top .notification-dropdown__content .buttons-container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: .5em 0;
+    background: #ddd6ef;
+    border: none;
+    border-radius: var(--def-radius);
+    color: #8a7ea9;
+    font-weight: 600;
+    transition: .25s;
+}
+.navbar-top .notification-dropdown__content .buttons-container button:hover{
+    opacity: .75;
+}
+.navbar-top .notification-dropdown__content .buttons-container button i{
+    color: #8a7ea9;
+}
+.navbar-top .notification-dropdown__content .buttons-container button:first-child{
+    margin-bottom: .5em;
+}
+
+/*clipboard*/
+.clipboard-input-group .va-input-wrapper__text{
+    border-radius: 5px 0 0 5px;
+}
+.clipboard-input-group button{
+    border: none;
+    padding: 0 1em;
+    background: var(--bs-purple);
+    border-radius: 0 5px 5px 0;
+    transition: .25s;
+}
+.clipboard-input-group button i{
+    color: white;
+}
+.clipboard-input-group button:hover{
+    opacity: .75;
+}
+
+/*notification*/
+.unread-notifications{
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FD7E14FF;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/*media*/
+@media screen and (max-width: 767px) {
+    .navbar-top{
+        height: auto;
+    }
+    .navbar-top .va-navbar__content{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    /*logo*/
+    .navbar-top .logo-nav{
+        width: 100px;
+        margin-right: 1em;
+    }
+    .navbar-top .va-navbar__left{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 576px) {
+    .navbar-top{
+        height: auto;
+    }
+    .navbar-top .va-navbar__content{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-top .va-navbar__right{
+        margin-top: .5em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-top .balance{
+        position: absolute;
+        right: 6px;
+        top: 19px;
+    }
+    /*logo*/
+    .navbar-top .logo-nav{
+        width: 100px;
+        margin-right: 1em;
+    }
+    .navbar-top .va-navbar__left{
+        justify-content: flex-start;
+    }
+}

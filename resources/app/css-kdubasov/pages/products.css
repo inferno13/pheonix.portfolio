@@ -1,0 +1,115 @@
+.product{
+    padding: 0 7.5% 2em;
+}
+
+.product .product-list {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* this is a piece of shit */
+.product .product-container{
+    padding: 0.75em;
+}
+.product .product-container .product-block{
+    border-radius: var(--def-radius) !important;
+    height: inherit;
+}
+.product .product-container .product-block h4{
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+    padding: .5em;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: 300;
+    /* background: var(--bs-purple); */
+    background: var(--sidebar);
+    color: #FFF;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.product .product-hit {
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(/media/label.svg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: right;
+    text-align: right;
+}
+
+.product .product-hit-word {
+    margin-right: 0.5em;
+    height: 100%;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.product .product-container .product-block--pro h4 {
+    background: var(--bs-purple);
+}
+.product .product-container .product-block div.price{
+    width: 100%;
+    padding: 1em 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(110, 66, 193, 0.1);
+}
+
+.product .product-container .product-block--pro div.price {
+    color: var(--bs-purple);
+}
+
+.product .product-container table tr{
+    background: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-color: #6e42c11d !important;
+}
+.product .product-container table tr td{
+    border: none !important;
+    text-align: left !important;
+}
+.product .product-container table tr td:last-child{
+    text-align: right !important;
+}
+
+/*button*/
+.product .product-container .product-block footer{
+    padding: 1em;
+    background-color: rgba(110, 66, 193, 0.05);
+}
+.product .product-container .product-block button{
+    width: 100%;
+    padding: .75em;
+}
+.product .product-container .va-table--striped tr:nth-child(even) td{
+    background: none;
+}
+
+
+/*media*/
+@media screen and (max-width: 1300px) {
+    .product{
+        padding: 0 1.5% 2em;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .product .product-container{
+        width: calc(50% - .5em);
+        margin-bottom: 1em;
+    }
+}
+@media screen and (max-width: 900px) {
+    .product .product-container{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}

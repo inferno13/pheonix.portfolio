@@ -1,0 +1,41 @@
+.history.table{
+    margin: 0 auto 2em !important;
+    padding: 0 1.5em !important;
+    width: 75% !important;
+}
+/*top title with i*/
+.history h3{
+    width: 100%;
+    padding: .25em 0 .25em;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.history h3 i{
+    margin-right: .25em;
+}
+
+/*history main card*/
+.history .va-chip.va-chip--small,
+.history .va-chip__content{
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    color: inherit !important;
+    font-size: inherit !important;
+}
+
+.history .inner{
+    overflow-x: scroll !important;
+}
+.history .inner table{
+    min-width: 600px !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .history.table{
+        width: 95% !important;
+    }
+}

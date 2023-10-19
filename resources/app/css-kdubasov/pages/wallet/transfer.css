@@ -1,0 +1,103 @@
+.history{
+    width: 80%;
+    margin: auto;
+    padding: 0 0 1.5em 0;
+}
+.history .cent-nt h3{
+    display: block;
+}
+
+.history .block-title{
+    font-size: 1.2em;
+    opacity: .75;
+    margin: 1.5em 0 1em;
+}
+
+/*top blocks*/
+.history .top-blocks{
+    padding: 0 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+/*top card*/
+.history .top-blocks .top-card{
+    width: calc(50% - .5em);
+    padding: var(--va-card-padding);
+}
+.history .top-blocks .top-card h3,
+.history .center-card h3{
+    font-size: 1.15rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+.history .top-blocks .top-card.address h3,
+.history .top-blocks .top-card.address .text{
+    justify-content: center;
+    text-align: center;
+}
+.history .top-blocks .top-card h3 i,
+.history .center-card h3 i{
+    margin-right: .5em;
+}
+.history .top-blocks .top-card .text{
+    margin-bottom: .75em;
+}
+
+/*input-group with input and label*/
+.history .input-group{
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.history .input-group label{
+    font-size: 15px;
+    margin-bottom: .35em;
+}
+.history .top-card.left .input-group input{
+    width: 100%;
+    background: none;
+    padding: .6em;
+    border: none !important;
+    background: var(--gray-op-15);
+    border-radius: var(--def-radius);
+    transition: .25s;
+}
+.history .input-group input:hover,
+.history .input-group input:focus{
+    border: 1px solid var(--gray-op-40);
+    box-shadow: var(--va-card-box-shadow, var(--va-block-box-shadow));
+}
+
+/*center card*/
+.history .center-card{
+    width: 100%;
+    padding: var(--va-card-padding);
+}
+.history .center-card .inner{
+    overflow-x: scroll;
+}
+
+
+
+/*media*/
+@media screen and (max-width:1200px){
+    .history{
+        width: 95%;
+    }
+}
+@media screen and (max-width:950px){
+    /*top blocks*/
+    .history .top-blocks{
+        flex-wrap: wrap;
+    }
+    .history .top-blocks .top-card{
+        width: 100%;
+    }
+    .history .top-blocks .top-card:first-child{
+        margin-bottom: 1em !important;
+    }
+}

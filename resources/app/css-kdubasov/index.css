@@ -1,0 +1,57 @@
+:root{
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-purple-op-50: rgba(111, 66, 193, 0.5);
+    --bs-purple-op-25: rgba(111, 66, 193, 0.25);
+    --bs-purple-op-15: rgba(111, 66, 193, 0.15);
+    --bs-purple-op-10: rgba(111, 66, 193, 0.10);
+    --bs-purple-op-05: rgba(111, 66, 193, 0.05);
+    --puple-text: #7351c0;
+    --light-purple: #ddd6ef;
+    --table-border: #c2d1da;
+    --sidebar:rgb(31, 38, 47);
+    --sidebar-hover: #131A22;
+    --gray-op-10:rgba(85, 85, 85, 0.1);
+    --gray-op-15:rgba(85, 85, 85, 0.15);
+    --gray-op-20:rgba(85, 85, 85, 0.2);
+    --gray-op-30:rgba(85, 85, 85, 0.3);
+    --gray-op-40:rgba(85, 85, 85, 0.4);
+    --va-data-table-striped-tr-background-color: var(rgba(111, 66, 193, 0.25)) !important;
+
+    --def-radius: 5px;
+}
+
+*{
+    line-height: 1.1;
+}
+
+/*-scrollbar-*/
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: none !important;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: var(--def-radius);
+    background-color: var(--bs-purple) !important;
+}
+
+/*pagination*/
+.table-pagination{
+    padding: .5em 0;
+}
+.table-pagination .va-button--normal {
+    color: var(--bs-purple) !important;
+}
+.table-pagination .va-button--current{
+    color: white !important;
+}
+.table-pagination .va-button--current:before{
+    background: var(--bs-purple) !important;
+}
+
+
+/*spin icon*/
+.va-icon.va-icon--spin.inner-loading__spinner{
+    color: var(--bs-purple) !important;
+}

@@ -1,0 +1,45 @@
+.adminNavbar{
+    padding: 0 !important;
+    background: var(--sidebar) !important;
+    color: white !important;
+}
+.adminNavbar .va-navbar__content{
+    justify-content: center !important;
+}
+.adminNavbar .va-navbar__item{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.adminNavbar a,
+.adminNavbar .va-dropdown{
+    padding: .35em 1em;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    border-radius: .25em;
+    transition: .25s;
+}
+.adminNavbar a:hover{
+    background: var(--sidebar-hover);
+}
+.adminNavbar .va-dropdown__content{
+    margin-top: .75em;
+    background: var(--sidebar-hover) !important;
+}
+.adminNavbar a span:first-child,
+.adminNavbar .va-dropdown span:first-child{
+    margin-right: .15em;
+}
+
+/*media*/
+@media screen and (max-width: 1270px){
+    /*.adminNavbar span.va-icon{*/
+    /*    display: none;*/
+    /*}*/
+}
+@media screen and (max-width: 950px){
+    .adminNavbar{
+        display: none;
+    }
+}

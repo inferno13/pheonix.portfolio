@@ -1,0 +1,105 @@
+.partners{
+    width: 80%;
+    padding-bottom: 2em;
+    margin: auto;
+}
+
+/*top cards*/
+.partners .partner-cards{
+    padding: 6em 0;
+    display: flex;
+    justify-content: space-between;
+}
+/*card*/
+.partners .partner-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33% - .5em);
+}
+.partners .partner-cards .card h3{
+    font-weight: 600;
+    font-size: 1.75em;
+    margin-bottom: 0;
+}
+.partners .partner-cards .card p{
+    text-align: center;
+}
+
+/*chart*/
+.partners .chart-widget{
+    height: auto;
+    padding: var(--va-card-padding);
+}
+.partners .chart-widget .chart-overflow,
+.partners .table-bottom .inner{
+    overflow-x: scroll !important;
+}
+.partners .chart-widget.line{
+    margin-top: 1.25em;
+    margin-bottom: 1.25em !important;
+}
+.partners .chart-widget .va-chart{
+    height: 40vh;
+}
+
+/*title*/
+.partners h3{
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+.partners h3 i{
+    margin-right: .5em;
+}
+
+/*table-bottom*/
+.partners .table-bottom{
+    padding: var(--va-card-padding);
+}
+
+/*levels*/
+.partners .levels{
+    padding: var(--va-card-padding);
+}
+.partners .va-tabs__slider-wrapper{
+    background: var(--bs-purple) !important;
+}
+.partners .levels .va-tab[aria-selected="true"]{
+    color: var(--bs-purple) !important;
+}
+.partners .levels .va-tab:hover{
+    color: var(--bs-purple) !important;
+}
+
+
+/*media*/
+@media screen and (max-width: 1200px){
+    .partners{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 950px){
+    /*card*/
+    .partners .partner-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .partners .partner-cards .card{
+        width: calc(50% - .5em);
+    }
+    .partners .partner-cards .card:last-child{
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width: 500px){
+    .partners .partner-cards .card{
+        width: 100%;
+        margin-top: 2em;
+    }
+    .partners .partner-cards .card:first-child{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,128 @@
+.deposit{
+    width: 80%;
+    margin: auto;
+}
+
+.deposit .block-title{
+    opacity: .75;
+    font-size: 1.2em;
+    margin: .5em 0 2em;
+}
+
+.deposit .deposit-crypto-methods{
+    display: flex;
+    padding: 0 0 1.5em;
+}
+/*card*/
+.deposit .deposit-card-crypto {
+    cursor: pointer;
+}
+
+.deposit .deposit-crypto-methods{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.deposit .deposit-crypto-methods .va-card{
+    width: calc(25% - .5em);
+    margin: 0 0 .75em !important;
+}
+.deposit .deposit-crypto-methods .va-card__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row !important;
+    padding: 1em;
+}
+.deposit .deposit-crypto-methods img{
+    width: 50px;
+    margin-right: .5em;
+}
+.deposit .deposit-crypto-methods a{
+    color: var(--va-on-background-primary) !important;
+    font-size: 1.15rem;
+    transition: .25s;
+}
+.deposit .deposit-crypto-methods a:hover{
+    color: var(--bs-purple) !important;
+}
+
+
+/*select deposit*/
+.select-deposit{
+    margin: 0 0 1.5em 0;
+}
+.select-deposit .va-card__inner{
+    padding: 0 var(--va-card-padding);
+}
+.select-deposit .va-card__inner .inner{
+    padding: 0 !important;
+}
+.select-deposit .va-input-wrapper--labeled .va-input-wrapper__text{
+    padding-top: 0;
+}
+.deposit h3{
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+.deposit h3 i{
+    margin-right: .5em;
+}
+/*dropdown*/
+.select-deposit .va-dropdown{
+    margin-bottom: 0 !important;
+}
+
+/*deposit method*/
+.deposit.method .va-card__inner{
+    padding: var(--va-card-padding);
+}
+.deposit.method .va-card__inner h3{
+    font-weight: 300;
+    font-size: 1.25em;
+    margin-bottom: .5em;
+}
+.deposit.method .va-card__inner h3 i{
+    margin-right: .25em;
+}
+.deposit.method table{
+    margin-bottom: 1em;
+}
+.deposit .select-deposit .inner,
+.withdraw .inner{
+    overflow-x: scroll !important;
+}
+
+
+/*media*/
+@media screen and (max-width: 1200px) {
+    .deposit{
+        width: 95%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 950px) {
+    /*cards*/
+    .deposit .deposit-crypto-methods .va-card{
+        width: calc(50% - .5em);
+        margin: .5em 0;
+    }
+    .deposit .deposit-crypto-methods img{
+        width: 40px;
+        margin-right: .5em;
+    }
+    /*cards end*/
+}
+@media screen and (max-width: 450px) {
+    /*cards*/
+    .deposit .deposit-crypto-methods img{
+        width: 30px;
+    }
+    .deposit .deposit-crypto-methods a{
+        font-size: 1rem;
+    }
+    /*cards end*/
+}

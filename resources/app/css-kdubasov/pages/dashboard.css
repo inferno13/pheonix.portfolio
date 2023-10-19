@@ -1,0 +1,154 @@
+.dashboard nav.bg-nt{
+    padding: 1.75em 7.5%;
+}
+.dashboard-inner{
+    width: 85%;
+    padding-top: 2em;
+    margin: auto;
+}
+
+/*dashboard-contributors-list*/
+.dashboard .top-info-list{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+}
+.dashboard .top-info-list .top-card{
+    width: calc(25% - 1em);
+    height: 100%;
+}
+.dashboard .top-info-list .top-card .va-card__inner{
+    display: flex !important;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+/*icon*/
+.dashboard .top-info-list .top-card .icon-container{
+    margin-bottom: 10px;
+    padding: .75em;
+    background: var(--gray-op-10);
+    border-radius: var(--def-radius);
+}
+.dashboard .top-info-list .top-card i{
+    font-size: 22px;
+    color: var(--bs-purple);
+}
+/*h3*/
+.dashboard .top-info-list .top-card .va-card__inner h3{
+    font-size: 2em;
+}
+
+/*контейнер для таблиц*/
+.dashboard .tables-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*таблица мои партнеры*/
+.dashboard .table-patners,
+.dashboard .table-pays{
+    width: calc(50% - .75em);
+    padding: 1.5em 0;
+}
+.dashboard .table-patners .va-card__content,
+.dashboard .table-pays .va-card__content{
+    /*min-width: 450px !important;*/
+    overflow-x: scroll !important;
+}
+
+/*table title*/
+.dashboard .va-card__title{
+    padding-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    justify-content: flex-start !important;
+}
+.dashboard .va-card__title i{
+    margin-right: .5em;
+}
+
+
+/*ТИП ОПЕРАЦИИ*/
+.dashboard .table-pays .va-chip.va-chip--small,
+.dashboard .table-pays .va-chip__content{
+    line-height: .9;
+    font-weight: 300;
+    padding: 0 !important;
+    background: none !important;
+    color: inherit !important;
+}
+
+/*граница нижняя шапки*/
+.va-data-table .va-data-table__table .va-data-table__table-thead{
+    border-bottom: 2px solid rgba(85, 85, 85, 0.1);
+}
+.va-data-table:hover{
+    background: inherit;
+}
+
+
+/*media*/
+@media screen and (max-width: 1250px){
+    .dashboard nav.bg-nt{
+        padding: 1.75em 1.5%;
+    }
+    .dashboard-inner{
+        width: 97%;
+    }
+}
+@media screen and (max-width: 1100px){
+    /*dashboard-contributors-list cards*/
+    /*h3*/
+    .dashboard .top-info-list .top-card .va-card__inner h3{
+        font-size: 1em;
+    }
+    .dashboard .top-info-list .top-card .va-card__inner p{
+        font-size: .75em;
+    }
+    /*dashboard-contributors-list end*/
+
+    /*tables*/
+    .dashboard .tables-container{
+        flex-wrap: wrap;
+    }
+    .dashboard .table-patners,
+    .dashboard .table-pays{
+        width: 100%;
+        padding: .5em 0;
+    }
+    .dashboard .table-patners{
+        padding-top: 1em;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .dashboard-inner,
+    .dashboard nav.bg-nt{
+        padding: 1em;
+    }
+
+    /*dashboard-contributors-list*/
+    .dashboard .top-info-list{
+        flex-wrap: wrap;
+    }
+    .dashboard .top-info-list .top-card{
+        width: calc(50% - .25em);
+        margin-bottom: .5em;
+    }
+    .dashboard .top-info-list .top-card .va-card__inner{
+        padding: .5em;
+    }
+    .dashboard .top-info-list .top-card .icon-container{
+        padding: .55em;
+    }
+    /*dashboard-contributors-list end*/
+}
+@media screen and (max-width: 500px){
+    /*dashboard-contributors-list start*/
+    .dashboard .top-info-list .top-card i{
+        font-size: 12px;
+    }
+    /*dashboard-contributors-list end*/
+}

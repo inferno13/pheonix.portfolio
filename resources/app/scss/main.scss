@@ -1,0 +1,41 @@
+@import 'sweetalert2/dist/sweetalert2.min.css';
+@import 'vuestic-sass/index';
+@import 'icon-fonts/index';
+@import 'video.js/dist/video-js.css';
+@import 'material-design-icons-iconfont/dist/material-design-icons.min.css';
+
+:root {
+  --va-sidebar-item-content-padding: 0.75em;
+}
+
+.va-sidebar__item__content {
+  min-height: 38px;
+}
+
+.material-icons {
+  display: flex;
+}
+
+.va-table {
+  width: 100%;
+}
+
+.flex {
+  .va-card {
+    height: 100%;
+  }
+}
+
+.va-card {
+  width: 100%;
+  margin-bottom: 0 !important;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.va-data-table__table-td {
+  white-space: normal;
+}

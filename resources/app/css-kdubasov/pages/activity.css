@@ -1,0 +1,12 @@
+.activity-log{
+
+}
+.activity-log .va-card__inner{
+    padding: var(--va-card-padding);
+}
+.activity-log .inner{
+    overflow-x: scroll !important;
+}
+.activity-log .inner table{
+    min-width: 800px !important;
+}

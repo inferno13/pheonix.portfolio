@@ -1,0 +1,81 @@
+.deposit.method{
+    width: 100%;
+}
+/*titles*/
+.deposit.method nav.bg-nt{
+    margin-bottom: 2.5em;
+    padding: 1.5em 15%;
+}
+
+/*container*/
+.deposit.method header{
+    width: 70%;
+    margin: auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.deposit.method header .quest:first-child{
+    width: calc(55% - 2em);
+}
+.deposit.method header .quest{
+    width: calc(45% - 2em);
+}
+
+.deposit.method table tr{
+    background: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-color: rgba(110, 66, 193, 0.5) !important;
+}
+.deposit.method table tr:last-child{
+    border-bottom: none !important;
+}
+.deposit.method table tr td{
+    border: none !important;
+    text-align: left !important;
+}
+.deposit.method table tr td:last-child{
+    font-weight: 600;
+    text-align: right !important;
+}
+.deposit.method .va-table--striped tr:nth-child(even) td{
+    background: none;
+}
+.deposit.method header .quest button{
+    width: 100%;
+}
+
+/*media*/
+@media screen and (max-width:1200px){
+    /*titles*/
+    .deposit.method nav.bg-nt{
+        padding: 1em 2.5%;
+    }
+    .deposit.method nav.bg-nt{
+        margin-bottom: .5em;
+    }
+
+    /*container*/
+    .deposit.method header{
+        width: 95%;
+    }
+
+    .deposit.method header .va-card,
+    .deposit.method header .quest{
+        width: calc(50% - .75em);
+    }
+}
+@media screen and (max-width:1000px){
+    .deposit.method header .va-card,
+    .deposit.method header .quest{
+        width: 100%;
+    }
+    .deposit.method header .quest{
+        margin-top: 3em;
+    }
+}

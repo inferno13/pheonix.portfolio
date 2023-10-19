@@ -1,0 +1,60 @@
+table{
+    /*border: 2px solid var(--gray-op-20);*/
+    color: var(--dark) !important;
+}
+table thead{
+    border-bottom: none;
+}
+table tr{
+    border: 1px solid var(--table-border) !important;
+    /*border-bottom: 2px solid var(--gray-op-20);*/
+}
+table thead th{
+    text-align: center !important;
+    font-size: 12px !important;
+    padding: 1em !important;
+    border-right: 1px solid var(--table-border) !important;
+}
+table thead th:last-child{
+    border-right: none !important;
+}
+table thead{
+    border-bottom: 1px solid var(--table-border) !important;
+}
+table tr td{
+    text-align: center !important;
+    border-right: 1px solid var(--table-border) !important;
+}
+table tr td:last-child{
+    border-right: none !important;
+}
+.va-data-table .va-data-table__table .va-data-table__table-thead th{
+    box-shadow: none;
+}
+table tr:hover{
+    background: var(--gray-op-10) !important;
+}
+table thead tr:hover{
+    background: none !important;
+}
+
+table .va-icon{
+    color: #6f42c1;
+}
+
+.va-data-table .va-data-table__table.striped .va-data-table__table-tr:nth-child(2n):not(.selected):after{
+    background: var(--gray-op-10);
+}
+.va-data-table .va-data-table__table.striped .va-data-table__table-tr:nth-child(2n):not(.selected):hover{
+    background: var(--gray-op-10);
+}
+
+
+@media screen and (max-width: 1000px){
+    table thead th{
+        font-size: 10px !important;
+    }
+    table tr td{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,71 @@
+.overview{
+    width: 80%;
+    margin: 0 auto 2em;
+}
+.overview .top-container{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.overview .top-container .va-card{
+    width: calc(33% - .5em);
+    margin-right: .5em;
+    padding: 1.5em var(--va-card-padding);
+    margin-bottom: .75em !important;
+    text-align: center;
+}
+.overview .top-container .va-card .inner{
+    font-size: 1.75em;
+    font-weight: 600;
+    color: var(--bs-purple);
+}
+.overview .top-container .va-card h3{
+    font-weight: 300;
+    font-size: 1em;
+    opacity: .75;
+}
+
+
+/*table-container*/
+.overview .table-container{
+    width: calc(64% + .75em);
+    margin-top: 1.5em;
+}
+.overview .table-container h3{
+    padding: 1.5em var(--va-card-padding);
+    padding-bottom: 0;
+    font-size: 1.25em;
+    text-align: center;
+}
+.overview .table-container table a{
+    color: var(--bs-purple);
+    font-weight: 600;
+}
+.overview .table-container .va-table th{
+    border-bottom: none;
+}
+
+/*media*/
+@media screen and (max-width: 1000px) {
+    .overview{
+        width: 95%;
+    }
+    .overview .top-container{
+        justify-content: space-between;
+    }
+    .overview .top-container .va-card{
+        width: calc(50% - .5em);
+        margin-right: 0;
+    }
+
+    .table-container{
+        width: 100% !important;
+        margin-top: 1.5em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .overview .top-container .va-card{
+        width: 100%;
+    }
+}
